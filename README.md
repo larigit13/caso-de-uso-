@@ -4,7 +4,7 @@ flowchart LR
   A[Usuário]
 
 
-  %% Casos de uso (nós circulares)
+  %% Casos de uso (retangulares)
   UC1((Gestão de Pessoas - Física/Jurídica))
   UC2((Gestão de Docentes))
   UC3((Gestão de Fornecedores))
