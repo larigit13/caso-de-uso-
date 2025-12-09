@@ -1,12 +1,12 @@
 ```mermaid
 flowchart LR
-  %% Atores (caixas simples)
+  %% Atores
   A[Administrador]
   S[Secretário]
   F[Setor Financeiro]
 
   %% Casos de uso (nós circulares)
-  UC1((Gestão de Pessoas\n(Física/Jurídica)))
+  UC1((Gestão de Pessoas - Física/Jurídica))
   UC2((Gestão de Docentes))
   UC3((Gestão de Fornecedores))
   UC4((Gestão de Alunos))
