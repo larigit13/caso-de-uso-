@@ -1,29 +1,28 @@
-# caso-de-uso-
-
-## Diagrama de Caso de Uso – Gestão de Pessoas, Docentes, Fornecedores e Alunos
-
 ```mermaid
-%% Diagrama de Caso de Uso
-usecaseDiagram
+flowchart LR
+    %% Atores
+    A[<<actor>> Administrador]
+    S[<<actor>> Secretário]
+    F[<<actor>> Setor Financeiro]
 
-actor Administrador
-actor Secretario as "Secretário"
-actor Financeiro as "Setor Financeiro"
+    %% Casos de Uso
+    UC1((Gestão de Pessoas<br/>(Física/Jurídica)))
+    UC2((Gestão de Docentes))
+    UC3((Gestão de Fornecedores))
+    UC4((Gestão de Alunos))
 
-usecase (Gestão de dados de Pessoas\n(Física e Jurídica)) as UC_Pessoas
-usecase (Gestão de dados de Docentes) as UC_Docentes
-usecase (Gestão de dados de Fornecedores) as UC_Fornecedores
-usecase (Gestão de dados de Alunos) as UC_Alunos
+    %% Ligações Administrador
+    A --> UC1
+    A --> UC2
+    A --> UC3
+    A --> UC4
 
-Administrador --> UC_Pessoas
-Administrador --> UC_Docentes
-Administrador --> UC_Fornecedores
-Administrador --> UC_Alunos
+    %% Ligações Secretário
+    S --> UC1
+    S --> UC2
+    S --> UC4
 
-Secretario --> UC_Pessoas
-Secretario --> UC_Docentes
-Secretario --> UC_Alunos
-
-Financeiro --> UC_Fornecedores
-Financeiro --> UC_Pessoas
+    %% Ligações Financeiro
+    F --> UC3
+    F --> UC1
 ```
