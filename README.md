@@ -1,6 +1,9 @@
 # caso-de-uso-
-%% Diagrama de Caso de Uso – Gestão de Pessoas, Docentes, Fornecedores e Alunos
 
+## Diagrama de Caso de Uso – Gestão de Pessoas, Docentes, Fornecedores e Alunos
+
+```mermaid
+%% Diagrama de Caso de Uso
 usecaseDiagram
 
 actor Administrador
@@ -23,3 +26,4 @@ Secretario --> UC_Alunos
 
 Financeiro --> UC_Fornecedores
 Financeiro --> UC_Pessoas
+```
